@@ -10,6 +10,7 @@ import {
     ChatComponent
 } from './components';
 import { StatModule } from '../../shared';
+import { DataShareingService } from '../../Services/DatabaseService';
 
 @NgModule({
     imports: [
@@ -24,6 +25,6 @@ import { StatModule } from '../../shared';
         TimelineComponent,
         NotificationComponent,
         ChatComponent
-    ]
+    ], providers: [DataShareingService]
 })
 export class DashboardModule {}

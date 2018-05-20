@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { routerTransition } from '../../router.animations';
-
+import { DataShareingService } from '../../Services/DatabaseService';
 @Component({
     selector: 'app-dashboard',
     templateUrl: './dashboard.component.html',
@@ -12,6 +12,9 @@ export class DashboardComponent implements OnInit {
     public sliders: Array<any> = [];
 
     constructor() {
+        debugger;
+       // this._DataShareingService.insert();
+        //this._DataShareingService.fetch();
         this.sliders.push(
             {
                 imagePath: 'assets/images/slider1.jpg',
