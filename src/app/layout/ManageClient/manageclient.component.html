@@ -1,104 +1,150 @@
-<div align="center">
-
-    <div>
-        <h3>Manage Clients</h3>
+<div [@routerTransition]>
+    <app-page-header [heading]="'Clients'" [icon]="'fa-edit'"></app-page-header>
+    <div class="row">
+        <h3>Manage Clients Info</h3>
     </div>
-    <table>
-        <tr>
-            <td>
-                <h5>Name</h5>
-            </td>
-            <td>
-                <input type="text" style="height:20px;width:200px" />
-            </td>
-            <td>
-                <h5>Age</h5>
-            </td>
-            <td>
-                <input type="text" style="height:20px;width:50px" />
-            </td>
-        </tr>
-        <tr>
-            <div class="radio">
-                <label>
-                    <h5>Gender</h5>  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""> Male<br />
-                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked=""> Female
-                </label><br />
-            </div>
-        </tr>
-        <tr>
+    <div class="row">
+        <div class="col-lg-6">
             <fieldset class="form-group">
-                <label for="exampleInputFile"><h5>Photo</h5></label>
-                <input type="file" class="form-control-file" id="exampleInputFile">
+                <label>First Name</label>
+                <input class="form-control" placeholder="Please provide FirstName">
+
             </fieldset>
-        </tr>
-        <tr>
-            <td>
-                <h5>Current Package</h5>
-            </td>
-            <td>
-                <input type="text" style="height:20px;width:100px" />
-            </td>
-            <td>
-                <h5>Total Fees</h5>
-            </td>
-            <td>
-                <input type="text" style="height:20px;width:50px" />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <h5>Starting Date</h5> <input name="date" type="date" required>
-            </td>
-            <td>
-               <h5>Due Date</h5>  <input name="date" type="date" required>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <h5>Last Payment</h5>
-            </td>
-            <td>
-                <input type="text" style="height:20px;width:100px" />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <h5>Last Payment Date</h5>  <input name="date" type="date" required>
-            </td>
-            <td>
-                <h5>Next Payment Date</h5> <input name="date" type="date" required>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <h5>Next Payment Amount</h5>
-            </td>
-            <td>
-                <input type="text" style="height:20px;width:100px" /><br />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <h5>Pending Dues</h5>
-            </td>
-            <td>
-                <input type="text" style="height:20px;width:100px" /><br />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <div>
-                    <button type="button" (click)="save()">Save</button>
-                </div>
-            </td>
-            <td>
-                <div>
-                    <button type="button" (click)="back()">Back</button>
-                </div>
-            </td>
-        </tr>
-    </table>
-  
+        </div>
+        <div class="col-lg-6">
+            <fieldset class="form-group">
+                <label>Last Name</label>
+                <input class="form-control" placeholder="Please provide Last Name">
+            </fieldset>
+        </div>
+    </div>
     
+    <div class="row">
+        <div class="col-lg-6">
+            <fieldset class="form-group">
+                <label>Age</label>
+                <input class="form-control" placeholder="Please provide age">
+            </fieldset>
+        </div>
+        <div class="col-lg-6">
+            <fieldset class="form-group">
+                <label>Gender</label>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""> Male
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> Female
+                    </label>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label>Package</label>
+                <select class="form-control">
+                    <option>Package 1</option>
+                    <option>Package 2</option>
+                    <option>Package 3</option>
+                    <option>Package 4</option>
+                    <option>Package 5</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <fieldset class="form-group">
+                <label>Total Fees</label>
+                <input class="form-control" placeholder="Please provide Total fee">
+
+            </fieldset>
+        </div>
+    </div>
+
+   
+    <div class="row">
+        <div class="col-lg-6">
+            <fieldset class="form-group">
+                <label>Package Starting Date</label>
+                <input class="form-control" placeholder="Please provide package starting date">
+
+            </fieldset>
+        </div>
+        <div class="col-lg-6">
+            <fieldset class="form-group">
+                <label>Last Payment Amount</label>
+                <input class="form-control" placeholder="Please provide Last Payment Amount">
+
+            </fieldset>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <fieldset class="form-group">
+                <label>Last Payment Date</label>
+                <input class="form-control" placeholder="Please provide Last Payment Date">
+
+            </fieldset>
+        </div>
+        <div class="col-lg-6">
+            <fieldset class="form-group">
+                <label>Next Payment Date</label>
+                <input class="form-control" placeholder="Please provide Next Payment Date">
+
+            </fieldset>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <fieldset class="form-group">
+                <label>Next Payment Amount</label>
+                <input class="form-control" placeholder="Please provide Next Payment Amount">
+
+            </fieldset>
+        </div>
+        <div class="col-lg-6">
+            <fieldset class="form-group">
+                <label>Pending Dues if Any!</label>
+                <input class="form-control" placeholder="Pending dues will populate here!!!">
+
+            </fieldset>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+            <fieldset class="form-group">
+                <button type="button" (click)="save()" class="btn btn-lg btn-success">Save</button>
+            </fieldset>
+        </div>
+        <div class="col-lg-3">
+            <fieldset class="form-group">
+                <button type="button" (click)="back()" class="btn btn-lg btn-warning">Back</button>
+            </fieldset>
+        </div>
+    </div>
+
 </div>
+
+<!--<table>
+   
+           
+    <tr>
+        <td>
+            <div>
+                <button type="button" (click)="save()">Save</button>
+            </div>
+        </td>
+        <td>
+            <div>
+                <button type="button" (click)="back()">Back</button>
+            </div>
+        </td>
+    </tr>
+</table>-->
+<!--</divclass="col-lg-6">-->
