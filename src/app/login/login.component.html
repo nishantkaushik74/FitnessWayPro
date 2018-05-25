@@ -1,22 +1,20 @@
-<div class="login-page" [@routerTransition]>
+<div class="login-page" [@routerTransition] style="background:url('./assets/images/login-gym.jpg');">
     <div class="row justify-content-md-center">
-        <div class="col-md-4">
-            <img src="assets/images/logo.png" width="150px" class="user-avatar" />
-            <h3>Fitness Way Pro</h3>
-            <form role="form">
-                <div class="form-content">
-                    <div class="form-group">
-                        <input type="text" [(ngModel)]="userModel.userEmail" name="txtemail" class="form-control input-underline input-lg" id="" placeholder="Email">
-                    </div>
-
-                    <div class="form-group">
-                        <input type="password" [(ngModel)]="userModel.userPassword" name="txtpassword"  class="form-control input-underline input-lg" id="" placeholder="Password">
-                    </div>
-                </div>
-                <!--<a class="btn rounded-btn" [routerLink]="['/dashboard']" (click)="onLoggedin()"> Log in </a>-->
-               <a class="btn rounded-btn" (click)="onLoggedin()"> Log in </a>
-                <a class="btn rounded-btn" [routerLink]="['/signup']">Register</a>
+        <div class="wrapper">
+            <form class="login">
+                <p class="title"><img src="assets/images/logo.png" class="login-logo"></p>
+                <input type="text" placeholder="Username" autofocus/>
+                <i class="fa fa-user"></i>
+                <input type="password" placeholder="Password" />
+                <i class="fa fa-key"></i>
+                <a href="#">Forgot your password?</a>
+                <button>
+                    <i class="spinner"></i>
+                    <span class="state">Log in</span>
+                </button>
             </form>
+            <footer><a target="blank" href="#">Fitness Way Pro</a></footer>
+
         </div>
     </div>
-</div>
+</div> 

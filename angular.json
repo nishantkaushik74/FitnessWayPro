@@ -25,7 +25,9 @@
               "src/styles/app.scss"
             ],
             "scripts": [
-              "node_modules/chart.js/dist/Chart.js"
+              "node_modules/chart.js/dist/Chart.js",
+              "src/assets/js/jquery.min.js",
+              "src/assets/js/site.js"
             ]
           },
           "configurations": {
