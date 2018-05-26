@@ -1,40 +1,44 @@
 <div align="right">
-    <button type="button" (click)="Add()">Add Client</button>  
+    <button data-toggle="tooltip" data-placement="left" title="Add Clients" type="button" (click)="Add()" class="circle-button-theme"><i class="material-icons">add</i></button>
 </div>
-    <div class="card-body table-responsive">
-        <table class="table client-list">
-            <thead class="thead">
-                <tr>
-                    <th>#</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Username</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Nikhil</td>
-                    <td>Watts</td>
-                    <td>nikhil@wattsbrotherswitness.com</td>
-                    <td> <button type="button" (click)="edit()"><i class="fa fa-edit"></i></button>
-                    <button type="button" style="margin-left:10px!important"><i class="fa fa-trash"></i></button></td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>vivek</td>
-                    <td>watts</td>
-                    <td>vivek@wattsbrotherswitness.com</td>
-                    <td><button type="button" (click)="edit()"><i class="fa fa-edit"></i></button><button type="button" style="margin-left:10px!important"><i class="fa fa-trash"></i></button></td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Nishant</td>
-                    <td>Kaushik</td>
-                    <td>nishant.kaushik@wattsbrothersfitness.com</td>
-                    <td> <button type="button" (click)="edit()"><i class="fa fa-edit"></i></button><button type="button" style="margin-left:10px!important"><i class="fa fa-trash"></i></button></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<div class="card-body table-responsive">
+    <table class="table client-list">
+        <thead class="thead">
+            <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Nikhil</td>
+                <td>Watts</td>
+                <td>nikhil@wattsbrotherswitness.com</td>
+                <td>
+                    <button type="button" (click)="edit()"><i class="material-icons">edit</i></button>
+                    <button type="button" style="margin-left:10px!important"><i class="material-icons">delete</i></button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>vivek</td>
+                <td>watts</td>
+                <td>vivek@wattsbrotherswitness.com</td>
+                <td><button type="button" (click)="edit()"><i class="material-icons">edit</i></button>
+                <button type="button" style="margin-left:10px!important"><i class="material-icons">delete</i></button></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Nishant</td>
+                <td>Kaushik</td>
+                <td>nishant.kaushik@wattsbrothersfitness.com</td>
+                <td> <button type="button" (click)="edit()"><i class="material-icons">edit</i></button>
+                <button type="button" style="margin-left:10px!important"><i class="material-icons">delete</i></button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

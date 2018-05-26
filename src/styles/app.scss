@@ -4,3 +4,112 @@
 @import "utils";
 @import "rtl";
 @import "responsive";
+.list-group-item i, .submenu  i{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.list-group-item i.material-icons, .submenu i.material-icons {
+    font-size: 24px;
+    margin-left: -3px;
+}
+.profile-option h3 {
+    font-size: 18px;
+    color: #fff;
+    margin: 10px 0;
+    margin-bottom:0
+}
+.profile-option img {
+   width:100px;
+   border-radius:50%;
+   border:none;
+   padding:0 !important
+}
+a.navbar-brand img {
+    min-width: 209px;
+    max-width: 210px;
+}
+a.navbar-brand {
+    padding: 0 !important;
+}
+.sidebar {
+    top: 58px;
+    }
+.profile-option {
+    padding: 10px 0;
+}
+h5.user-role {
+    color: #8a8a8a;
+    font-size: 14px;
+}
+.nested-menu .expand ul.submenu {
+    display: block;
+    list-style-type: none;
+    height: auto;
+    padding-left: 0;
+}
+
+.nested-menu .expand ul.submenu li a {
+    padding-left: 50px !important;
+    text-decoration: none !important;
+}
+.nested-menu{position:relative}
+.nested-menu > a.list-group-item:after {
+    position: absolute;
+    content: "\f054";
+    width: 15px;
+   color:#fff;
+    z-index: 999;
+    top: 50%;
+    right: 10px;
+    margin-top: -7.5px;
+    font: normal normal normal 14px/1 FontAwesome;
+}
+.table th, .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: none;
+}
+table tr td button {
+    background: #fff;
+    border: none;
+    color: #2196f2;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    box-shadow: 2px 2px 7px rgba(10, 49, 80, 0.2);
+    cursor:pointer
+}
+table.table.client-list tr td button:focus {
+  outline:none !important
+}
+table.table.client-list tr:hover {
+    background: #f5f5f5;
+}
+table tr td button i {
+    font-size: 20px !important;
+    line-height: 34px !important;
+}
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #2196f2;
+}
+button.circle-button-theme {
+    position: fixed;
+    right: 20px;
+    width: 55px;
+    border-radius: 50%;
+    height: 55px;
+    bottom: 20px;
+    background: #2196f2;
+    border: 0;
+    color: #fff;
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.2);
+    cursor:pointer
+}
+
+button.circle-button-theme i{
+    font-size: 27px;
+    line-height: 54px;
+}

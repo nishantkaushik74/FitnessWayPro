@@ -1,4 +1,4 @@
-<div class="login-page" [@routerTransition] style="background:url('./assets/images/login-gym.jpg');">
+<div class="login-page" [@routerTransition] style="background:url('./assets/images/login-gym.jpeg');">
     <div class="row justify-content-md-center">
         <div class="wrapper">
             <form class="login">
@@ -8,12 +8,12 @@
                 <input type="password" placeholder="Password" />
                 <i class="fa fa-key"></i>
                 <a href="#">Forgot your password?</a>
-                <button>
+                <button (click)="onLoggedin()" class="login-btn">
                     <i class="spinner"></i>
                     <span class="state">Log in</span>
                 </button>
             </form>
-            <footer><a target="blank" href="#">Fitness Way Pro</a></footer>
+            <footer><a target="blank" href="http://fitnesswaypro.com/">Fitness Way Pro</a></footer>
 
         </div>
     </div>

@@ -1,7 +1,7 @@
 $(document).ready(function(){
-
 var working = false;
-$('.login').on('submit', function(e) {
+    $('.login-btn').on('click', function (e) {
+
     debugger;
   e.preventDefault();
   if (working) return;
