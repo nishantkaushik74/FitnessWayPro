@@ -1,9 +1,9 @@
-<div>
+<div align="right">
     <button type="button" (click)="Add()">Add Client</button>  
 </div>
     <div class="card-body table-responsive">
-        <table class="table">
-            <thead>
+        <table class="table client-list">
+            <thead class="thead">
                 <tr>
                     <th>#</th>
                     <th>First Name</th>
@@ -15,24 +15,25 @@
             <tbody>
                 <tr>
                     <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td> <button type="button" (click)="edit()">Edit Client</button></td>
+                    <td>Nikhil</td>
+                    <td>Watts</td>
+                    <td>nikhil@wattsbrotherswitness.com</td>
+                    <td> <button type="button" (click)="edit()"><i class="fa fa-edit"></i></button>
+                    <button type="button" style="margin-left:10px!important"><i class="fa fa-trash"></i></button></td>
                 </tr>
                 <tr>
                     <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td> <button type="button" (click)="edit()">Edit Client</button></td>
+                    <td>vivek</td>
+                    <td>watts</td>
+                    <td>vivek@wattsbrotherswitness.com</td>
+                    <td><button type="button" (click)="edit()"><i class="fa fa-edit"></i></button><button type="button" style="margin-left:10px!important"><i class="fa fa-trash"></i></button></td>
                 </tr>
                 <tr>
                     <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                    <td> <button type="button" (click)="edit()">Edit Client</button></td>
+                    <td>Nishant</td>
+                    <td>Kaushik</td>
+                    <td>nishant.kaushik@wattsbrothersfitness.com</td>
+                    <td> <button type="button" (click)="edit()"><i class="fa fa-edit"></i></button><button type="button" style="margin-left:10px!important"><i class="fa fa-trash"></i></button></td>
                 </tr>
             </tbody>
         </table>
