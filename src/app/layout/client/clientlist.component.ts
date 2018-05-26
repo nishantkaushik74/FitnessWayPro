@@ -3,14 +3,14 @@ import { UserModel } from '../../Models/UserModel';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'add', templateUrl: './clientlist.component.html'
+    selector: 'add', templateUrl: './clientlist.component.html', styleUrls: ['./clientlist.component.css']
 })
 export class ClientlistComponent {
 
     constructor(private _router: Router) {
 
     }
-   
+
     Add() {
         this._router.navigate(['/manageclient']);
     }

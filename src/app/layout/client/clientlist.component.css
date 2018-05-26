@@ -1,0 +1,8 @@
+client-list {
+    background-color: #ff0000;
+    border:dashed;
+}
+
+    client-list.thead {
+        background-color: grey;
+    }
