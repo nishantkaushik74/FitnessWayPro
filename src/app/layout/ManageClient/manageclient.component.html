@@ -1,4 +1,4 @@
-<div [@routerTransition]>
+<div [@routerTransition] class="padding-20">
     <!--<app-page-header [heading]="'Clients'" [icon]="'fa-edit'"></app-page-header>-->
     <div class="row">
         <h3>Manage Clients Info</h3>
@@ -117,14 +117,15 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-3">
-            <fieldset class="form-group">
-                <button type="button" (click)="save()" class="btn btn-lg btn-success">Save</button>
-            </fieldset>
-        </div>
-        <div class="col-lg-3">
+
+        <div class="col-lg-6 text-left">
             <fieldset class="form-group">
                 <button type="button" (click)="back()" class="btn btn-lg btn-warning">Back</button>
+            </fieldset>
+        </div>
+        <div class="col-lg-6 text-right">
+            <fieldset class="form-group">
+                <button type="button" (click)="save()" class="btn btn-lg btn-success">Save</button>
             </fieldset>
         </div>
     </div>
