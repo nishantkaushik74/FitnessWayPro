@@ -1,7 +1,7 @@
 const {app, BrowserWindow} = require('electron')
 const path = require('path')
 const url = require('url')
-
+    
 let win
 
 function createWindow () {
@@ -23,7 +23,7 @@ function createWindow () {
 }
 let server = require('./server/server.js')
 app.on('ready', createWindow)
-
+    
 
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
