@@ -40,3 +40,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+/dist
+/.vs/config
+/.vs/ProjectCode_19_2_2018/v15
+/.vs
