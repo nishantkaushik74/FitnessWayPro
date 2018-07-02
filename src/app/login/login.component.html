@@ -3,9 +3,9 @@
         <div class="wrapper">
             <form class="login">
                 <p class="title"><img src="assets/images/logo.png" class="login-logo"></p>
-                <input type="text" placeholder="Username" autofocus/>
+                <input type="text" placeholder="Username" [(ngModel)]="userModel.userEmail" name="username" autofocus/>
                 <i class="fa fa-user"></i>
-                <input type="password" placeholder="Password" />
+                <input type="password" placeholder="Password" name="password" [(ngModel)]="userModel.userPassword" />
                 <i class="fa fa-key"></i>
                 <a href="#">Forgot your password?</a>
                 <button (click)="onLoggedin()" class="login-btn">

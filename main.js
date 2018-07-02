@@ -21,7 +21,7 @@ function createWindow () {
     win = null
   })
 }
-
+let server = require('./server/server.js')
 app.on('ready', createWindow)
 
 

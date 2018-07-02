@@ -16,8 +16,14 @@ export class LoginComponent implements OnInit {
     ngOnInit() {}
 
     onLoggedin() {
-        this.router.navigate(['/dashboard']);
-        localStorage.setItem('LoggedInUser', this.userModel.userEmail);
-        localStorage.setItem('isLoggedin', 'true');
+        debugger;
+        var userId = window['ValidateUser'](this.userModel.userEmail, this.userModel.userPassword);
+        if (userId != null && parseInt(userId) > 0) {
+            this.router.navigate(['/dashboard']);
+            localStorage.setItem('LoggedInUser', this.userModel.userEmail);
+            //localStorage.setItem('isLoggedin', 'true');
+        } else {
+            alert("User or password is incorrect");
+        }
     }
 }
